@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "..\\twfm\\frontend-apps"
+		},
+		{
+			"path": "..\\twfm\\frontend-libs"
+		},
+		{
+			"path": "..\\twfm\\frontend-misc"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
