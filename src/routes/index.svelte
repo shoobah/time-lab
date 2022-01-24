@@ -3,10 +3,11 @@
 	import Select, { Option } from '@smui/select';
 	import SveltyPicker from 'svelty-picker';
 	import { minutesToTimeStringDateFns, minutesToTimeStringMoment } from '$lib/util';
-
 	import DataTable, { Head, Body, Row, Cell } from '@smui/data-table';
-	import { zonedTimeToUtc, format, toDate, utcToZonedTime, formatInTimeZone } from 'date-fns-tz';
 	import moment from 'moment-timezone';
+	import * as dateFnsTz from 'date-fns-tz';
+
+	const { format, utcToZonedTime } = dateFnsTz;
 
 	let myDate = format(new Date(), 'yyyy-MM-dd HH:mm');
 	let iana = ['Europe/London', 'Europe/Stockholm', 'America/Denver'];

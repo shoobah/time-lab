@@ -1,6 +1,8 @@
 import moment from 'moment-timezone';
 import { getDay, addMinutes } from 'date-fns';
-import { zonedTimeToUtc, format, toDate, utcToZonedTime, formatInTimeZone } from 'date-fns-tz';
+import * as dateFnsTz from 'date-fns-tz';
+
+const { format, utcToZonedTime } = dateFnsTz;
 
 export function minutesToTimeStringMoment(day, minutes, timezone) {
 	const utcDay = moment.tz(day, 'Etc/UTC');
